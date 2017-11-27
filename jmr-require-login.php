@@ -11,6 +11,15 @@
 
 if ( !defined( 'ABSPATH' ) ) exit;
 
+require 'plugin-update-checker/plugin-update-checker.php';
+
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/jmrcodes/jmr-require-login/',
+    __FILE__,
+    'jmr-require-login'
+);
+
+
 function jmr_require_login() {
 	if ( defined('WP_LOCAL_DEV') && WP_LOCAL_DEV === true && $GLOBALS['pagenow'] !== 'wp-login.php' && false === is_user_logged_in() ) {
 		auth_redirect();
