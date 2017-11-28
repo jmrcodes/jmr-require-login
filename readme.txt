@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Development Mode Login ===
 Contributors: imaginarymedia
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BNWNBPEK33UBA
 Tags: login, security
